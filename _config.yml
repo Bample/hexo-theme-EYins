@@ -1,0 +1,71 @@
+# Miscelaneous
+# 其他
+favicon: /favicon.ico
+
+# fancybox gallery
+# Fancybox启用
+fancybox: true
+
+# main menu navigation
+# 导航栏
+# ====================================
+menu:
+  home: /
+  archive: /archives
+  category: /categories
+  tags: /tags
+  about: /about
+  RSS: /atom.xml
+
+# site logo and footer quote
+# 网站标志和页脚
+# ====================================
+logo: LiangYin
+banner: img/background.jpg
+quote: "长风破浪会有时，直挂云帆济沧海。——李白"
+
+# social club
+# 社交网络
+# ====================================
+social:
+  zhihu: 
+  weibo: 
+  stackflow:
+  github: https://github.com/LiangYin233
+
+# third party services settings
+# 第三方服务设置
+# ===================================
+
+#leanCloud
+leancloud:
+  app_id:
+  app_key:
+
+# 评论系统
+# Valine comment system. https://valine.js.org
+valine:
+  comment_name: #your comment area title 评论标题
+  enable: false # if you want use valine, please set this value to true 启用valine
+  app_id: # your leancloud appId
+  app_key: # your leancloud appKey
+  placeholder: # Comment Box placeholder 占位符
+
+#disqus
+disqus_shortname:
+
+# 腾讯统计
+tencent:
+ appid:
+
+# 百度推送
+baidu_vertification:
+
+# 百度统计
+baidu_analytics: 
+  id: 
+
+# ==================================
+version: 0.1
+# ==================================
+

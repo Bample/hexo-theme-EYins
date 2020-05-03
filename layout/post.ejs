@@ -1,0 +1,43 @@
+<article class="post">
+  <%- partial('_partials/gallery') %>
+  <header>
+    <div class="post-title mobile-post-title">
+      <h1><%= page.title %></h1>
+      <div class="post-tags">
+        <% if (page.tags && page.tags.length){ %>
+        <%- list_tags(page.tags, {
+            show_count: false,
+            style: 'none',
+            separator: ' '
+          }) %>
+        <% } %>
+      </div>
+    </div>
+  </header>
+  <%- partial('_partials/toc') %>
+  <div class="post-content">
+    <div class="post-title">
+      <h1 style="font-size: 32px;margin: 0 0 5px;"><%= page.title %></h1>
+    </div>
+    <div class="post-meta">
+      <%if(is_post()){%>
+      <span class="post-time"><i class="iconfont icon-calendar"></i><%- date(page.date,"YYYY-MM-DD")%>&nbsp;</span>
+      <% if (page.categories && page.categories.length){ %>
+      <% page.categories.each(function(sorting){ %>
+      <a class="post-category" href="<%= url_for(sorting.path) %>">|&nbsp;<%= sorting.name %></a>
+      <% }) %>
+      <% } %>
+      <!----------------------------------->
+      <% if (theme.leancloud.app_id && theme.leancloud.app_key){ %>
+      <i class="iconfont icon-divide"></i>
+      <div class="post-visits" data-url="<%- url_for(page.path) %>" data-title="<%- page.title %>">
+        <%- __('posts.visits') %>
+      </div>
+      <% } %>
+      <!----------------------------------->
+    </div>
+    <%}%>
+    <%- page.content %>
+  </div>
+  <div class="post-footer">the end - 版权所有，转载请授权</div>
+</article>

@@ -1,0 +1,84 @@
+<%
+var keywords = '';
+var description = '';
+(function() {
+    if (theme.keywords) {
+        keywords += theme.keywords;
+        keywords += ',';
+    }
+    if (page.keywords) {
+        keywords += page.keywords;
+    }
+    if (config.description) {
+        description += config.description;
+        description += ',';
+    }
+    if  (is_post()) {
+        description += truncate(strip_html(page.content), {length: 100, omission: ','});
+    }
+})();
+%>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#34495e">
+  <title><% if (page.title){ %><%= page.title %> | <% } %><%= config.title %></title>
+  <link rel="alternate" href="path/of/rss" type="application/atom+xml">
+  <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="google" content="notranslate" />
+  <% if (keywords) { %>
+  <meta name="keywords" content="<%= keywords %>"> <% } %>
+  <% if (description) { %>
+  <meta name="description" content="<%= description %>"> <% } %>
+  <% if (config.author){ %>
+  <meta name="author" content="<%= config.author %>"> <% } %>
+  <% if (theme.rss){ %>
+  <link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml"> <% } %>
+  <%- css('css/style.css') %>
+  <% if (theme.tencent.appid){ %>
+  <script>
+    var _mtac = {};
+    (function () {
+      var mta = document.createElement("script");
+      mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
+      mta.setAttribute("name", "MTAH5");
+      mta.setAttribute("sid", "<%=theme.tencent.appid%>");
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(mta, s);
+    })();
+  </script>
+  <%}%>
+  <%if(theme.baidu_vertification){%>
+  <meta name="baidu-site-verification" content="<%= config.baidu_vertification%>" />
+  <script>
+    (function () {
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+  <%}%>
+    <%if(theme.baidu_analytics.id){%>
+  <script>
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?<%=theme.baidu_analytics.id%>";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  <%}%>
+</head>
