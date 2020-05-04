@@ -1,6 +1,7 @@
-ThemeVersion: 0.13
+ThemeVersion: 0.14
 # hexo-theme-EYins
 [English docs](https://github.com/YinsTeam/hexo-theme-EYins/blob/master/README.en.md)
+[繁體文檔](https://github.com/YinsTeam/hexo-theme-EYins/blob/master/README.tw.md)
 ------
 
 一个Hexo主题 - EYins - 简洁不简单。

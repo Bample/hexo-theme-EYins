@@ -1,6 +1,7 @@
-ThemeVersion: 0.13
+ThemeVersion: 0.14
 # hexo-theme-EYins
 [中文文档](https://github.com/YinsTeam/hexo-theme-EYins/blob/master/README.md)
+[繁體文檔](https://github.com/YinsTeam/hexo-theme-EYins/blob/master/README.tw.md)
 ---
 A Hexo Theme - EYins - Simplicity is not simple.
 
