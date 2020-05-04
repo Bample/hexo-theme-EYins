@@ -1,4 +1,4 @@
-ThemeVersion: 0.14
+ThemeVersion: 0.15
 # hexo-theme-EYins
 [中文文档](https://github.com/YinsTeam/hexo-theme-EYins/blob/master/README.md)
 [繁體文檔](https://github.com/YinsTeam/hexo-theme-EYins/blob/master/README.tw.md)
@@ -29,3 +29,6 @@ This topic is in the development stage, if you have any bugs or suggestions, wel
 $ npm install --save hexo-renderer-sass
 $ git clone https://github.com/LiangYin233/hexo-theme-EYins.git themes/EYins
 ```
+## Contributors
+[@Konger] (https://github.com/Konghuaiqing)
+[@LiangYin] (https://github.com/LiangYin233)
