@@ -39,20 +39,22 @@ var description = '';
   <% if (theme.rss){ %>
   <link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml"> <% } %>
   <%- css('css/style.css') %>
-  <% if (theme.tencent.appid){ %>
+
+  <% if (theme.analytics.tencent){ %>
   <script>
     var _mtac = {};
     (function () {
       var mta = document.createElement("script");
       mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
       mta.setAttribute("name", "MTAH5");
-      mta.setAttribute("sid", "<%=theme.tencent.appid%>");
+      mta.setAttribute("sid", "<%=theme.analytics.tencent%>");
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(mta, s);
     })();
   </script>
   <%}%>
-  <%if(theme.baidu_vertification){%>
+
+  <%if(theme.baidu_sitemap){%>
   <meta name="baidu-site-verification" content="<%= config.baidu_vertification%>" />
   <script>
     (function () {
@@ -68,17 +70,28 @@ var description = '';
       s.parentNode.insertBefore(bp, s);
     })();
   </script>
-
   <%}%>
-    <%if(theme.baidu_analytics.id){%>
+
+    <%if(theme.analytics.baidu){%>
   <script>
     var _hmt = _hmt || [];
     (function () {
       var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?<%=theme.baidu_analytics.id%>";
+      hm.src = "https://hm.baidu.com/hm.js?<%=theme.analytics.baidu%>";
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
+  </script>
+  <%}%>
+
+  <%if(theme.analytics.google){%>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=<%=theme.analytics.google%>"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '<%=theme.analytics.google%>');
   </script>
   <%}%>
 </head>

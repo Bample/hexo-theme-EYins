@@ -28,16 +28,16 @@
       <% }) %>
       <% } %>
       <!----------------------------------->
-      <% if (theme.leancloud.app_id && theme.leancloud.app_key){ %>
-      <i class="iconfont icon-divide"></i>
-      <div class="post-visits" data-url="<%- url_for(page.path) %>" data-title="<%- page.title %>">
-        <%- __('posts.visits') %>
-      </div>
-      <% } %>
-      <!----------------------------------->
     </div>
     <%}%>
     <%- page.content %>
   </div>
-  <div class="post-footer">the end - 版权所有，转载请授权</div>
+  <% if (theme.post_footer.copyright){ %>
+  <div style="padding: 1rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #ffcc00;
+  border-left-width: 0.4rem;
+  border-radius: 0.1rem;"><%- theme.post_footer.copyright %></div><% } %>
+  <div class="post-footer"><%- theme.post_footer.end %></div>
 </article>

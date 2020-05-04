@@ -1,3 +1,4 @@
+ThemeVersion: 0.13
 # hexo-theme-EYins
 一个Hexo主题 - EYins - 简洁不简单。
 
@@ -10,6 +11,8 @@
 ## 说明
 [DEMO](https://liangyin.xyz)
 
+PS:如果你也在使用这款主题,欢迎向我提交你的链接,展示在本页面
+
 注意事项:
 
 本主题默认展开所有博文，请在文章中标注``<!-- more -->``来规定收起位置。
@@ -19,7 +22,7 @@
 ## 安装
 ```
 $ npm install --save hexo-renderer-sass
-$ git clone https://github.com/wa-ri/hexo-theme-ztopic themes/ztopic
+$ git clone https://github.com/LiangYin233/hexo-theme-EYins.git themes/EYins
 ```
 
 # English:
@@ -34,6 +37,8 @@ Original at https://github.com/wa-ri/hexo-theme-ztopic.
 
 ## Description
 [DEMO](https://liangyin.xyz)
+
+PS:If you are also using this theme, feel free to submit your link to me and show it on this page
 
 Note:
 

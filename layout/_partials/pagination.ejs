@@ -2,12 +2,13 @@
 <nav class="pagination post-nav">
   <% if(page.prev){ %>
   <a href="<%= url_for(page.prev.path) %>">
-    <span class="prev-post"><i class="iconfont icon-back"></i><%= page.prev.title %></span>
+    <br>
+    <span class="prev-post">←<%= page.prev.title %></span>
   </a>
   <% } %>
   <% if(page.next){ %>
   <a href="<%= url_for(page.next.path) %>">
-    <span class="next-post"><%= page.next.title %><i class="iconfont icon-more"></i></span>
+    <span class="next-post"><%= page.next.title %>→</span>
   </a>
   <% } %>
 </nav>
@@ -17,7 +18,7 @@
 <nav class="pagination">
   <% if(page.prev){ %>
   <a href="<%= url_for(page.prev_link) %>">
-    <span class="prev"><i class="iconfont icon-back"></i><%= __('pagination.prev') %></span>
+    <span class="prev"><%= __('pagination.prev') %></span>
   </a>
   <% } %>
   <% if(page.next){ %>
