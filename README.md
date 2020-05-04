@@ -1,4 +1,4 @@
-ThemeVersion: 0.13
+ThemeVersion: 0.14
 # hexo-theme-EYins
 一个Hexo主题 - EYins - 简洁不简单。
 

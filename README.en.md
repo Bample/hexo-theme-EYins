@@ -1,4 +1,4 @@
-ThemeVersion: 0.13
+ThemeVersion: 0.14
 # hexo-theme-EYins
 
 A Hexo Theme - EYins - Simplicity is not simple.
