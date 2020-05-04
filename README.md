@@ -11,6 +11,8 @@ ThemeVersion: 0.13
 ## 说明
 [DEMO](https://liangyin.xyz)
 
+[文档](https://liangyin233.github.io/EYins-docs/#/)
+
 PS:如果你也在使用这款主题,欢迎向我提交你的链接,展示在本页面
 
 注意事项:
@@ -37,6 +39,8 @@ Original at https://github.com/wa-ri/hexo-theme-ztopic.
 
 ## Description
 [DEMO](https://liangyin.xyz)
+
+[Docs](https://liangyin233.github.io/EYins-docs/#/)
 
 PS:If you are also using this theme, feel free to submit your link to me and show it on this page
 
