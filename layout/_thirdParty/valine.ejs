@@ -11,24 +11,12 @@
 <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
 <script>
-  var GUEST_INFO = ['nick','mail','link'];
-  var guest_info = '<%= theme.comments.valine.guest_info %>'.split(',').filter(function(item){
-      return GUEST_INFO.indexOf(item) > -1
-  });
-  var notify = '<%= theme.comments.notify %>' === 'true';
-  var verify = '<%= theme.comments.verify %>' === 'true';
   new Valine({
-      el: '#valine_container',
-      notify: notify,
-      verify: verify,
-      appId: "<%= theme.comments.valine.app_id %>",
-      appKey: "<%= theme.comments.valine.app_key %>",
-      placeholder: "<%= theme.comments.valine.placeholder %>",
-      meta: guest_info,
-      pageSize: '<%= theme.comments.valine.pageSize %>',
-      avatar: '<%= theme.comments.valine.avatar %>',
-      lang: '<%= theme.comments.valine.lang %>',
-      guest_info: guest_info,
-      enableQQ: '<%= theme.comments.valine.enableQQ %>',
+    el: '#valine_comments',
+    appId: "<%= theme.valine.app_id %>",
+    appKey: "<%= theme.valine.app_key %>",
+    placeholder: "<%= theme.valine.placeholder %>",
+    pageSize: '<%= theme.valine.pageSize %>',
+    enableQQ: '<%= theme.valine.enableQQ %>'
   });
 </script>
