@@ -1,7 +1,9 @@
 ThemeVersion: 0.13
 # hexo-theme-EYins
-一个Hexo主题 - EYins - 简洁不简单。
+[English docs](https://github.com/YinsTeam/hexo-theme-EYins/blob/master/README.en.md)
+------
 
+一个Hexo主题 - EYins - 简洁不简单。
 性能、美观、SEO,样样俱全。
 
 ![截图](EYins.png)
