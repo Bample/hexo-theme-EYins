@@ -63,3 +63,7 @@ analytics:
   baidu_sitemap: true # Not "empty" means active.
 # ==================================
 
+# optimize
+# 优化
+# ==================================
+meta_head: "" # For analytics platform meta-head validation 用于分析平台meta头验证
