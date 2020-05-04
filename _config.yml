@@ -50,7 +50,35 @@ valine:
   enable: true # if you want use valine, please set this value to true 启用valine
   app_id: # your leancloud appId
   app_key: # your leancloud appKey
+  meta: nick,mail,link # 需填写项
+  requiredFields: nick,mail # 必填项
+  path:
   placeholder: 来留言呀~ # Comment Box placeholder 占位符
+  avatar: 'mp' # 头像类型
+  pageSize: 8 # 评论显示页数
+  lang: zh-CN # 语言
+  enableQQ: true # 是否把qq号转换为qq昵称和头像
+  highlight: true # 代码高亮
+  recordIP: true # 记录评论者ip
+  emojiCDN: '' # 自定义表情前缀
+  emojiMaps: # 自定义表情列表
+  # 自定义表情范例
+  # emojiCDN: 'https://cdn.jsdelivr.net/gh/blogimg/'
+  # emojiMaps: 
+  #   bilibili_face_疑问: emotion/bilibili/face_疑问.png
+  #   bilibili_face_再见: emotion/bilibili/face_再见.png
+  #   bilibili_face_拥抱: emotion/bilibili/face_拥抱.png
+  #   bilibili_face_武汉加油: emotion/bilibili/face_武汉加油.png
+  #   bilibili_face_无奈: emotion/bilibili/face_无奈.png
+  #   bilibili_face_微微笑: emotion/bilibili/face_微微笑.png
+  #   bilibili_face_思考: emotion/bilibili/face_思考.png
+  #   bilibili_face_期待: emotion/bilibili/face_期待.png
+  #   bilibili_face_撇嘴: emotion/bilibili/face_撇嘴.png
+  #   bilibili_face_难过: emotion/bilibili/face_难过.png
+  #   bilibili_face_脸红: emotion/bilibili/face_脸红.png
+  #   bilibili_face_酷: emotion/bilibili/face_酷.png
+  
+  # 更多自定义配置详见 https://valine.js.org
 
 #disqus
 disqus_shortname:
