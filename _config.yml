@@ -1,0 +1,76 @@
+# Miscelaneous
+# 其他
+favicon: /favicon.ico
+
+# Plugin Management
+# 插件管理
+fancybox: ture
+
+# main menu navigation
+# 导航栏
+# ====================================
+menu:
+  home: /
+  archive: /archives
+  category: /categories
+  tags: /tags
+  about: /about
+  RSS: /atom.xml
+# ===================================
+
+# site logo and footer quote
+# 网站标志和页脚
+# ====================================
+logo: EYins
+banner: https://cdn.jsdelivr.net/gh/LiangYin233/MyBlog@gh-pages/img/background.jpg
+quote: "长风破浪会有时，直挂云帆济沧海。——李白" # Quote from a famous person or your favorite sentence 名人名言或自己喜欢的句子
+post_footer:
+  copyright: "<p style='padding:none'>本文作者 LiangYin</p><p style='padding:none'>除非特殊标明,未经作者允许严禁转载!</p>" # 支持HTML语法
+  end: the end
+# ===================================
+
+# social club
+# 社交网络
+# ====================================
+social:
+  zhihu: 
+  weibo: 
+  stackflow:
+  github: https://github.com/LiangYin233
+# ===================================
+
+# third party services settings
+# 第三方服务设置
+# ===================================
+
+# 评论系统
+# Valine comment system. https://valine.js.org
+valine:
+  comment_name: 评论 # your comment area title 评论标题
+  enable: false # if you want use valine, please set this value to true 启用valine
+  app_id: # your leancloud appId
+  app_key: # your leancloud appKey
+  placeholder: 来留言呀~ # Comment Box placeholder 占位符
+  pageSize: 8 # 评论显示页数
+  enableQQ: true # 是否把qq号转换为qq昵称和头像
+
+#disqus
+disqus_shortname:
+
+# livere 来必力
+# 将 livere_uid 改为自己的uid则启用该评论系统。
+livere_uid: 
+
+# 第三方统计/收录服务
+analytics: 
+  baidu:  # Your APPID
+  tencent: # Your APPID
+  google: # Your ID
+  baidu_sitemap: true # Not "empty" means active.
+# ==================================
+
+# optimize
+# 优化
+# ==================================
+meta_head: "" # For analytics platform meta-head validation 用于分析平台meta头验证
+

@@ -1,0 +1,30 @@
+menu:
+  home: 主頁
+  archive: 歸檔
+  tags: 標簽
+  category: 分類
+  about: 關於
+  RSS: RSS
+
+pagination:
+  prev: 上壹頁
+  next: 下壹頁
+
+posts:
+  readmore: 閱讀更多
+  toc: 目錄
+  visits: 閱讀次數
+
+footer:
+  powered: "由 %s 強力驅動"
+  theme: 主題
+
+counter:
+  category:
+    zero: "暫無分類"
+    one: 共計壹個分類
+    other: "共計 %d 個分類"
+  tagcloud:
+    zero: "暫無標簽"
+    one: 共計1個標簽
+    other: "共計 %d 個標簽"

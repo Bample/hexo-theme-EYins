@@ -1,0 +1,30 @@
+menu:
+  home: Home
+  archive: Archive
+  tags: Tags
+  category: Category
+  about: About
+  RSS: RSS
+
+pagination:
+  prev: Prev
+  next: Next
+
+posts:
+  readmore: Read more
+  toc: Contents
+  visits: Reading times
+
+footer:
+  powered: "Powered by %s"
+  theme: Theme
+
+counter:
+  category:
+    zero: "No Categories"
+    one: 1 Category Total
+    other: "%d Categories In Total"
+  tagcloud:
+    zero: "No Tags"
+    one: 1 Tag In Total
+    other: "%d Tags In Total"

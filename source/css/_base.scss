@@ -1,0 +1,40 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+html,
+body{
+  height: 100%;
+}
+body{
+  margin: 0;
+  font-size: 100%;
+  font-family: $global-serif-font-family;
+  line-height: 1.5;
+  background: #eaeaea;
+  color: $main-font-color;
+  white-space: normal;
+  word-wrap: break-word;
+  a{
+    color: $main-font-color;
+  }
+}
+main{
+  position: relative;
+  z-index: 8;
+  max-width: $main-width;
+  margin: -160px auto 10px;
+}
+.page{
+  background: #eaeaea;
+  height: 100%;
+  &>.container{
+    min-height: 100%;
+    padding-bottom: 210px;
+    overflow: hidden;
+  }
+  &>footer{
+    margin-top: -$footer-height;
+  }
+}
